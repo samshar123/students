@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@200;300;400;500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(70deg,#000000,cyan);
+
+}
+.head-1{
+    width: 100%;
+    text-align: center;
+    top:12rem;
+    position: relative;
+    display: block;
+}
+.head-main{
+    font-size: 4rem;
+    color: aliceblue;
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    text-shadow:10px 20px 20px rgb(56, 58, 58);
+    /* padding-bottom: 3rem; */
+}
+
+
+
+
+.head-main
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #080808 0%,
+    #f1f1f1 29%,
+    #f8fcfb 43%,
+    #080808 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 4rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+    padding-top: 2rem;
+
+    filter: url(#threshold) blur(0.1px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 30pt;
+    color: #f1f1f1;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+.btn-main{
+    width: 100%;
+    text-align: center;
+    top: 13rem;
+    position: relative;
+}
+.btn-1{
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    background:linear-gradient(270deg,#000000,cyan);
+    border: 0;
+    box-shadow: 5px 2px 10px rgb(75, 75, 75);
+
+}
+.btn-main a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+button, button::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'POPPINS',sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #01ccff 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+  }
+  
+  button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'EXPLORE HERE';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #206d6d 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+@media (max-width:700px) {
+    #container {
+        position: absolute;
+        margin: auto;
+        width: 100vw;
+        height: 80pt;
+        top: 0;
+        bottom: 0;
+        padding-top: 4rem;
+    
+        filter: url(#threshold) blur(0.1px);
+    }
+    .head-1{
+        width: 100%;
+        text-align: center;
+        top:8rem;
+        position: relative;
+        display: block;
+    }
+}
